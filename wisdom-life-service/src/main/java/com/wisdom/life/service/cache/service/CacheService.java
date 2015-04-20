@@ -48,7 +48,7 @@ public interface CacheService {
 	 * @param pattern
 	 * @return
 	 */
-	public abstract Set keys(String pattern);
+	public abstract Set<?> keys(String pattern);
 
 	/**
 	 * 检查key是否已经存在
