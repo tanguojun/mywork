@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<head>
+	#parse('/common/index/head.vm')
+</head>	
+<body>
+	#parse('/public/header.vm')
+    $screen_content
+    #parse('/public/footer.vm')
+</body>
+</html>

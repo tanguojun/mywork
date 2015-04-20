@@ -1,0 +1,12 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>#parse('/common/title.vm')   $!{title}</title>
+
+#parse('/common/favicon.vm')
+
+<link rel="stylesheet" href="${rc.contextPath}/css/common.css" type="text/css"></link>
+<link rel="stylesheet" href="${rc.contextPath}/css/login.css" type="text/css"></link>
+  
+<script type="text/javascript" src="${rc.contextPath}/js/jquery-1.9.1.js"></script>
+<script type="text/javascript" src="${rc.contextPath}/js/validateCommon.js"></script>
+<script type="text/javascript" src="${rc.contextPath}/js/MD5.js"></script>
+<script type="text/javascript" src="${rc.contextPath}/js/login.js"></script>

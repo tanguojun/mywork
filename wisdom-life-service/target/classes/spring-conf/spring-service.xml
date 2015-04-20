@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.2.xsd">
+
+	<!-- redis缓存service -->
+	<bean id="redisService"
+		class="com.wisdom.life.service.cache.service.impl.RedisServiceImpl">
+		<property name="redisTemplate" ref="redisTemplate"></property>
+	</bean>
+
+	<!-- 商户service -->
+	<bean id="merchantService"
+		class="com.wisdom.life.service.merchant.service.impl.MerchantServiceImpl">
+		<property name="merchantDao" ref="merchantDao"></property>
+		<property name="redisService" ref="redisService"></property>
+	</bean>
+
+</beans>

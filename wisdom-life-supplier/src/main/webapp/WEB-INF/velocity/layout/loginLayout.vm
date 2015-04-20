@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<head>
+	#parse('/common/loginHead.vm')
+</head>	
+<body>
+	#parse('/public/loginHeader.vm')
+    $screen_content
+    #parse('/public/loginFooter.vm')
+</body>
+</html>

@@ -1,0 +1,19 @@
+#set($layout="layout/loginLayout.vm")
+#set($title="- 登录")
+
+<div id="contentDiv">
+
+	<div id="errorShow"></div>
+	
+	<form action="${rc.contextPath}/index.jhtml" id="loginForm" name="loginForm" method="POST">
+		用户名:<input type="text" name="userName" id="userName" pattern=".*[^\s].*" title="不能为空(或空白字符)" placeholder="由6-18位字母或数字组成" />
+		<br/><br/>
+		密&nbsp;&nbsp;码:<input type="password" title="由6-18位字符组成" name="password" id="password" placeholder="由6-18位字符组成" />
+		<br/><br/>
+		<input type="button" id="loginSubmit" value="登录"/>
+		<br/><br/>
+		<a href="">免费注册</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="">忘记登录密码</a>
+		<br/><br/>
+	<form>
+	
+</div>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<tools>
+	<data type="boolean" key="VIEW_TOOLS_AVAILABLE" value="true" />
+
+	<toolbox scope="request">
+		<tool class="org.apache.velocity.tools.view.CookieTool" />
+		<tool class="org.apache.velocity.tools.view.ImportTool" />
+		<tool class="org.apache.velocity.tools.view.IncludeTool" />
+		<tool class="org.apache.velocity.tools.view.LinkTool" />
+		<tool class="org.apache.velocity.tools.view.PagerTool" />
+		<tool class="org.apache.velocity.tools.view.ParameterTool" />
+		<tool class="org.apache.velocity.tools.view.ViewContextTool" />
+		<tool>
+			<key>params</key>
+			<scope>request</scope>
+			<class>org.apache.velocity.tools.view.tools.ParameterParser</class>
+		</tool>
+		<tool>
+			<key>date</key>
+			<scope>application</scope>
+			<class>org.apache.velocity.tools.generic.DateTool</class>
+		</tool>
+		<tool>
+			<key>esc</key>
+			<scope>application</scope>
+			<class>org.apache.velocity.tools.generic.EscapeTool</class>
+		</tool>
+		<tool>
+			<key>stringUtils</key>
+			<scope>request</scope>
+			<class>org.apache.velocity.util.StringUtils</class>
+		</tool>
+		<!-- This is not directly useable. <tool class="org.apache.velocity.tools.view.AbstractSearchTool"/> -->
+		<!-- move this to request scope -->
+		<tool class="org.apache.velocity.tools.generic.ResourceTool" />
+	</toolbox>
+	<toolbox scope="session" createSession="false">
+		<tool class="org.apache.velocity.tools.view.BrowserTool" />
+	</toolbox>
+</tools>

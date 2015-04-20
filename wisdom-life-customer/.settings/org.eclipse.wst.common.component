@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="wisdom-life-customer">
+        <wb-resource deploy-path="/" source-path="/src/main/webapp"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/resources"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/java"/>
+        <dependent-module archiveName="wisdom-life-web-1.0.0.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/wisdom-life-web/wisdom-life-web">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="wisdom-life-service-1.0.0.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/wisdom-life-service/wisdom-life-service">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="wisdom-life-core-1.0.0.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/wisdom-life-core/wisdom-life-core">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <property name="java-output-path" value="/wisdom-life-customer/src/main/webapp/WEB-INF/classes"/>
+        <property name="context-root" value="/customer"/>
+    </wb-module>
+</project-modules>

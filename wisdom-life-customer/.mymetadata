@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="wisdom-life-customer"
+  id="myeclipse.1408955592078"
+  context-root="/customer"
+  j2ee-spec="6.0"
+  archive="wisdom-life-customer.war">
+  <attributes>
+    <attribute name="webrootdir" value="src/main/webapp" />
+  </attributes>
+</project-module>
+

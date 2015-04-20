@@ -1,0 +1,14 @@
+header {
+	text-align: center;
+}
+
+footer {
+	margin-top: 15px;
+	text-align: center;
+}
+
+#errorShow {
+	text-align: center;
+	color: red;
+	font-size: 12px;
+}
